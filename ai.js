@@ -1,7 +1,7 @@
 import OpenAI from 'openai';
 
 const openai = new OpenAI({
-  apiKey: "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"
+  apiKey: ""
 });
 
 export const openfun=async(value)=>{

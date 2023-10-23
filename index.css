@@ -22,7 +22,7 @@ img{
     background-color: rgb(183, 183, 183);
     color:black;
     padding:10px;
-    width: 450px;
+    width: 500px;
     height: 90px;
     margin-left: 20px;
     margin-top: 35px;
@@ -62,7 +62,7 @@ button{
 }
 .Story{
     border-radius: 15px;
-    width: 530px;
+    width: 567px;
     min-height: 100px;
     height: auto;
     background-color: rgb(183, 183, 183);
@@ -95,7 +95,7 @@ p{
 .Tags{
     border-radius: 15px;
     display: inline-block;
-    width: 300px;
+    width: 250px;
     background-color: aliceblue;
     border-width: 1000px;
     border-color: black;
@@ -104,7 +104,7 @@ p{
 }.main-block{
     border-radius: 25px;
     display: inline-block;
-    width: 600px;
+    width: 635px;
     min-height:490px;
     background-color: aliceblue;
     border: 10px;

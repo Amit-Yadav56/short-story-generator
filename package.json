@@ -1,7 +1,7 @@
 {
-  "name": "amit_repo",
+  "name": "short-story-generator",
   "version": "1.0.0",
-  "description": "projects i do",
+  "description": "Ai based wesite to generate story",
   "main": "index.js",
   "scripts": {
     "dev": "node ai.js"

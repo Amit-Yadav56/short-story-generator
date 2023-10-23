@@ -1,12 +1,30 @@
-function req(){
-    const val=document.querySelector('.prom').value;
-    document.querySelector('.Story').innerHTML=val;
-  }
+
+  function displayLetterByLetter() {
+    var textContainer = document.querySelector('.Story');
+    var sentence = document.querySelector('.prom').value;
+    var letterIndex = 0;
+
+    function addLetter() {
+        if (letterIndex < sentence.length) {
+            textContainer.innerHTML += sentence.charAt(letterIndex);
+            letterIndex++;
+            setTimeout(addLetter, 50); 
+        }
+    }
+
+    addLetter(); 
+}
+
+document.getElementById("generateButton").addEventListener("click", function () {
+    document.querySelector('.Story').innerHTML = "";
+    displayLetterByLetter();
+});
+  
   document.getElementById('insertButton').addEventListener('click', async () => {
     const data = {
-      name: 'John',
-      age: 30,
-      city: 'New York'
+      prompt: `${val}`,
+      story: `${sto}`,
+      likes: 1
     };
 
     const response = await fetch('/insertData', {

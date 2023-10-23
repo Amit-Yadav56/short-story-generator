@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Sentence Letter by Letter</title>
+</head>
+<body>
+    <div id="textContainer"></div>
+
+    <script>
+        // Get the div element where you want to display the sentence
+        var textContainer = document.getElementById("textContainer");
+
+        // Define the sentence you want to display
+        var sentence = "Hello, World!";
+
+        // Initialize a variable to keep track of the current letter position
+        var letterIndex = 0;
+
+        // Create a function to display the sentence letter by letter
+        function displayLetterByLetter() {
+            if (letterIndex < sentence.length) {
+                textContainer.innerHTML += sentence.charAt(letterIndex);
+                letterIndex++;
+                setTimeout(displayLetterByLetter, 100); // Adjust the time (in milliseconds) to control the speed of the animation
+            }
+        }
+
+        // Call the function to start the animation
+        displayLetterByLetter();
+    </script>
+</body>
+</html>

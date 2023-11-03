@@ -1,26 +1,31 @@
-
-  function displayLetterByLetter() {
+import {openfun} from './ai.js'
+  function displayLetterByLetter(result) {
     var textContainer = document.querySelector('.Story');
-    var sentence = document.querySelector('.prom').value;
+    var sentence = result;
     var letterIndex = 0;
 
     function addLetter() {
         if (letterIndex < sentence.length) {
             textContainer.innerHTML += sentence.charAt(letterIndex);
             letterIndex++;
-            setTimeout(addLetter, 50); 
+            setTimeout(addLetter, 150); 
         }
     }
 
     addLetter(); 
 }
 
+
 document.getElementById("generateButton").addEventListener("click", function () {
-    document.querySelector('.Story').innerHTML = "";
-    displayLetterByLetter();
+  var sentence = document.querySelector('.prom').value;
+  var result=openfun(sentence);
+  document.querySelector('.Story').innerHTML = "";
+  displayLetterByLetter(result);
 });
   
   document.getElementById('insertButton').addEventListener('click', async () => {
+    var val = document.querySelector('.prom').value;
+    var sto = document.querySelector('.Story');
     const data = {
       prompt: `${val}`,
       story: `${sto}`,

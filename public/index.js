@@ -19,7 +19,7 @@ import {openfun} from './ai.js'
 document.getElementById("generateButton").addEventListener("click", function () {
   var sentence = document.querySelector('.prom').value;
   var result=openfun(sentence);
-  document.querySelector('.Story').innerHTML = "";
+  document.querySelector('.Story').innerHTML = result;
   displayLetterByLetter(result);
 });
   

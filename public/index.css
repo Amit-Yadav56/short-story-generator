@@ -1,4 +1,4 @@
-body{
+body {
     background-color: rgb(183, 183, 183);
     font-family: Arial;
     /* font-weight: bold; */
@@ -7,76 +7,79 @@ body{
     background-size: cover; 
     background-attachment: fixed; 
     background-position: center;  */
-    
-}
-.video-background {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -1; /* Place the video behind the content */
-  }
-  
-  /* Make the video cover the entire screen */
-  video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-.innerdiv{
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
-    mix-blend-mode: multiply; 
+    margin: 0px;
+
 }
 
-img{
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.innerdiv {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Semi-transparent white background */
+    mix-blend-mode: multiply;
+}
+
+img {
     height: 20px;
     width: 20px;
 }
-.prom{
+
+.prom {
     background-color: rgb(183, 183, 183);
-    color:black;
-    padding:10px;
+    color: black;
+    padding: 10px;
     width: 500px;
     height: 90px;
     margin-left: 20px;
     margin-top: 35px;
     font-size: 20px;
     border-radius: 10px;
-    
+
 }
-input.cat{
+
+input.cat {
     width: 35px;
     height: 35px;
     ;
 }
 
-.review{
+.review {
     margin-right: 5px;
     padding: 5px 20px;
 }
-h1{
+
+h1 {
     font-size: 40px;
     margin-left: 5px;
     margin-bottom: 5px;
 }
-h2{
+
+h2 {
     font-size: 30px;
 }
-button{
+
+button {
     margin: 2px 5px;
-    
+
     height: 35px;
     cursor: pointer;
     float: right;
     border-radius: 60px;
-}.px{
+}
+
+.px {
     font-size: large;
     display: inline-flexbox;
-    
+
 }
-.Story{
+
+.Story {
     border-radius: 15px;
     width: 567px;
     min-height: 100px;
@@ -90,30 +93,38 @@ button{
     font-stretch: ultra-expanded;
 
 }
-.title{
-    color: white;
+
+.title {
     background: center;
     text-align: center;
+    width: 100%;
+    background: white;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 20px;
+    color: black;
+
 }
-p{
+
+.p {
+
     background-color: rgb(183, 183, 183);
     font-family: Arial;
     font-weight: bold;
     font-size: 30px;
+
 }
-.instruc{
-        display: flex;
-        margin: 20px 10px;
-        background-color: aliceblue;
-        padding-left: 12px;
-        padding: 25px;
-        border-radius: 15px;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: space-around;
+
+.Instructions {
+    display: flex;
+    margin: 20px 10px;
+    background-color: aliceblue;
+    padding-left: 12px;
+    padding: 25px;
+    border-radius: 15px;
 }
-.Tags{
+
+.Tags {
     border-radius: 15px;
     display: inline-block;
     width: 250px;
@@ -122,18 +133,22 @@ p{
     border-color: black;
     margin-left: 10px;
     margin-right: 10px;
-}.main-block{
+}
+
+.main-block {
     border-radius: 25px;
     display: inline-block;
     width: 635px;
-    min-height:490px;
+    min-height: 490px;
     background-color: aliceblue;
     border: 10px;
     border-color: black;
     vertical-align: top;
 
-}.lead-board{
-    
+}
+
+.lead-board {
+
     border-radius: 15px;
     margin-left: 10px;
     margin-right: 10px;
@@ -141,14 +156,26 @@ p{
     min-width: 300px;
     min-height: 490px;
     background-color: aliceblue;
-    border-width:  10px;
+    border-width: 10px;
     border-color: black;
     vertical-align: top;
-}.genre{
+}
+
+.genre {
     vertical-align: text-top;
     display: inline-block;
-    margin-left:10%;
-}#generateButton{
+    margin-left: 10%;
+}
+
+#generateButton {
     float: none;
 }
 
+footer {
+    background-color: White;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+}

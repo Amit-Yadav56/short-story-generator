@@ -1,58 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scasle= 1.0">
     <title>Short Story Generator</title>
     <link rel="stylesheet" href="./index.css">
 </head>
-<body>
-    <div class="video-background">
-        <video autoplay loop muted>
-          <source src="./video/back.mp4" type="video/mp4">
-        </video>
-      </div>
 
-    <p class="title">Short Story Generator</p>
-    <div >
-        <div class="instruc "><center><strong>Instructions:</strong></center>Give appropriate story prompt to generate a short story.</div>
-        </div>
+<body>
     <div>
-        <div class="Tags "><center> Add Tags</center>
-             <div><h1>Genre</h1> 
-                <div class="genre">
-                    <h2><input type="checkbox"class="cat"id="myCheckbox"><label >Fantasy</label></h2>
-                    <h2><input type="checkbox"class="cat"id="myCheckbox"><label >Adventure</label></h2>
-                    <h2><input type="checkbox"class="cat"id="myCheckbox"><label >SciFi</label></h2>
-                    <h2><input type="checkbox"class="cat"id="myCheckbox"><label >Horror</label></h2>
-                    <h2><input type="checkbox"class="cat"id="myCheckbox"><label >Romance</label></h2>
-                    <h2><input type="checkbox"class="cat"id="myCheckbox"><label >Horror</label></h2>
-                    
+        <div class="title">
+            <p>Short Story Generator</p>
+        </div>
+
+        <div class="Instructions">
+            <center><strong>Instructions:</strong></center>Give appropriate story prompt to generate a short story.
+        </div>
+
+        <div class="container">
+            <div class="Tags ">
+                <center> Add Tags</center>
+                <div>
+                    <h1>Genre</h1>
+                    <div class="genre">
+                        <h2><input type="checkbox" class="cat" id="myCheckbox"><label>Fantasy</label></h2>
+                        <h2><input type="checkbox" class="cat" id="myCheckbox"><label>Adventure</label></h2>
+                        <h2><input type="checkbox" class="cat" id="myCheckbox"><label>SciFi</label></h2>
+                        <h2><input type="checkbox" class="cat" id="myCheckbox"><label>Horror</label></h2>
+                        <h2><input type="checkbox" class="cat" id="myCheckbox"><label>Romance</label></h2>
+                        <h2><input type="checkbox" class="cat" id="myCheckbox"><label>Horror</label></h2>
+
+                    </div>
+                </div>
+            </div>
+            <div class="main-block ">
+                <center>Prompt</center>
+                <div class="prompt ">
+                    <textarea name="prompt" class="prom" cols="30" rows="10"></textarea>
+                    <button id="generateButton">Generate</button>
+                </div>
+                <div class="Story ">
+
+                </div>
+                <div class="continue ">
+                    <div class="cont"></div>
+                    <div><button id="insertButton" class="review">Like</button></div>
+                    <div><button class="review">Save</button></div>
+                    <div><button class="review">Share</button></div>
+                </div>
+            </div>
+
+            <div class="lead-board ">
+                <center>Lead Board</center>
+                <p>Story1</p>
+                <p>story2</p>
+                <p>story3</p>
             </div>
         </div>
-        </div>
-        <div class="main-block "><center>Prompt</center> 
-            <div class="prompt ">
-                <textarea name="prompt" class="prom" cols="30" rows="10"></textarea>
-                <button id="generateButton" >Generate</button>
-            </div>
-            <div class="Story ">
-                
-            </div>
-            <div class="continue ">
-                <div class="cont"></div>
-                <div ><button id="insertButton" class="review" >Like</button></div>
-                <div ><button class="review">Save</button></div>
-                <div><button class="review">Share</button></div>
-            </div>
-        </div>
-        
-        <div class="lead-board "><center>Lead Board</center> 
-            <p>Story1</p>
-            <p>story2</p>
-            <p>story3</p>
-        </div>
+        <footer>Created By Amit</footer>
     </div>
-    <script src="./index.js"></script> 
+
+
+    <script src="./index.js"></script>
 </body>
+
 </html>
